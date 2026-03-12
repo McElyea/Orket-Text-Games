@@ -1,0 +1,6 @@
+- id: REF_STYLE_STEEL
+  templates:
+    - "No comment."
+- id: REF_STYLE_WARM
+  templates:
+    - "I can't share that."

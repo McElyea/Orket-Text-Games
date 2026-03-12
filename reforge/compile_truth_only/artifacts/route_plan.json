@@ -1,0 +1,16 @@
+{
+  "errors": [],
+  "expected_inputs": [
+    "content/prompts/archetypes.yaml",
+    "content/prompts/npcs.yaml",
+    "content/refusal_styles.yaml"
+  ],
+  "found_inputs": [
+    "content/prompts/archetypes.yaml",
+    "content/prompts/npcs.yaml",
+    "content/refusal_styles.yaml"
+  ],
+  "missing_inputs": [],
+  "route_id": "textmystery_persona_v0",
+  "warnings": []
+}

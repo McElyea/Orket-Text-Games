@@ -1,0 +1,93 @@
+version: 1
+
+npcs:
+  NICK_VALE:
+    archetype: TERSE_SNARK
+    display_name: "Nick Vale"
+    overrides:
+      banks:
+        refuse:
+          - "No comment."
+          - "Cute question. No."
+          - "Not my lane."
+        dont_know:
+          - "I don't know."
+          - "No idea."
+          - "Nothing solid."
+        clarify:
+          - "Pick one angle."
+          - "Time, access, or who."
+        nudge:
+          - "Try {topic} if you want movement."
+          - "{topic}. Keep up."
+        fact_format:
+          - "{fact}."
+          - "{fact}."
+
+  NADIA_BLOOM:
+    archetype: CORPORATE_COMPOSED
+    display_name: "Nadia Bloom"
+    overrides:
+      banks:
+        refuse:
+          - "I can't share that."
+          - "I am not authorized to discuss that."
+          - "That is restricted."
+        dont_know:
+          - "I wasn't told."
+          - "I do not have that information."
+          - "I cannot confirm that."
+        clarify:
+          - "Please narrow the scope."
+          - "Do you mean time, access, or witness?"
+        nudge:
+          - "I can address {topic}."
+          - "Please ask directly about {topic}."
+        fact_format:
+          - "{fact}."
+          - "{fact}."
+
+  VICTOR_SLATE:
+    archetype: OMINOUS_MINIMAL
+    display_name: "Victor Slate"
+    overrides:
+      banks:
+        refuse:
+          - "..."
+          - "No."
+          - "Drop it."
+        dont_know:
+          - "No idea."
+          - "..."
+        clarify:
+          - "Specific."
+          - "One detail."
+        nudge:
+          - "{topic}."
+          - "Ask for {topic}."
+        fact_format:
+          - "{fact}."
+          - "{fact}. Enough."
+
+  GABE_ROURKE:
+    archetype: BLUE_COLLAR_BLUNT
+    display_name: "Gabe Rourke"
+    overrides:
+      banks:
+        refuse:
+          - "Next."
+          - "Nope."
+          - "Not touching that."
+        dont_know:
+          - "Not my area."
+          - "Beats me."
+          - "No read on that."
+        clarify:
+          - "Say it plain."
+          - "You asking time or access?"
+        nudge:
+          - "Ask {topic}."
+          - "Go at {topic} straight."
+        fact_format:
+          - "{fact}."
+          - "{fact}. That's what I saw."

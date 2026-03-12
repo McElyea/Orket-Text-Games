@@ -1,0 +1,127 @@
+archetypes:
+  BLUE_COLLAR_BLUNT:
+    banks:
+      clarify:
+      - What are you asking, exactly?
+      - Which part?
+      - Say it straight.
+      dont_know:
+      - Not my area.
+      - Beats me.
+      - No clue.
+      fact_format:
+      - '{fact}.'
+      - '{fact}. That''s what I saw.'
+      - '{fact}. That''s all I''ve got.'
+      nudge:
+      - Ask about {topic}.
+      - Try {topic}. That's where it is.
+      - '{topic}. Go.'
+      refuse:
+      - Next.
+      - Nope.
+      - Not getting into that.
+    description: Direct, practical, impatient.
+    rules:
+      allow_contractions: true
+      allow_ellipsis: false
+      allow_exclamation: false
+      allow_questions: true
+      end_punctuation: .
+      max_words: 12
+  CORPORATE_COMPOSED:
+    banks:
+      clarify:
+      - Can you narrow that down?
+      - Which system are you referring to?
+      - Do you mean the feed or the alarms?
+      dont_know:
+      - I wasn't told.
+      - I don't have that information.
+      - I can't confirm that.
+      fact_format:
+      - '{fact}.'
+      - '{fact}. That is what the record shows.'
+      - '{fact}. That is my understanding.'
+      nudge:
+      - If you have questions, ask about {topic}.
+      - Try {topic}. That is the relevant area.
+      - I can speak to {topic}.
+      refuse:
+      - I can't share that.
+      - I'm not authorized to discuss that.
+      - That isn't appropriate for me to answer.
+    description: Polished, careful, speaks like policy.
+    rules:
+      allow_contractions: false
+      allow_ellipsis: false
+      allow_exclamation: false
+      allow_questions: true
+      end_punctuation: .
+      max_words: 16
+  OMINOUS_MINIMAL:
+    banks:
+      clarify:
+      - Specific.
+      - Names.
+      dont_know:
+      - No idea.
+      - '...'
+      fact_format:
+      - '{fact}.'
+      - '{fact}...'
+      - '{fact}.'
+      nudge:
+      - '{topic}.'
+      - Ask {topic}.
+      refuse:
+      - '...'
+      - No.
+      - Don't.
+    description: Sparse, unsettling. Says less than necessary.
+    rules:
+      allow_contractions: true
+      allow_ellipsis: true
+      allow_exclamation: false
+      allow_questions: false
+      end_punctuation: .
+      max_words: 8
+  TERSE_SNARK:
+    banks:
+      clarify:
+      - Be specific.
+      - About what, exactly?
+      - Which part?
+      dont_know:
+      - I don't know.
+      - No idea.
+      - Not sure.
+      fact_format:
+      - '{fact}.'
+      - '{fact}. That''s it.'
+      - '{fact}. Next.'
+      nudge:
+      - Ask about {topic}.
+      - '{topic}. Start there.'
+      - You're circling. Try {topic}.
+      refuse:
+      - No comment.
+      - Not answering that.
+      - Pass.
+      - You heard me.
+    description: Short, clipped, a bit smug.
+    rules:
+      allow_contractions: true
+      allow_ellipsis: false
+      allow_exclamation: false
+      allow_questions: true
+      end_punctuation: .
+      max_words: 10
+defaults:
+  allow_contractions: true
+  allow_ellipsis: false
+  allow_exclamation: false
+  allow_questions: true
+  end_punctuation: .
+  max_words: 14
+version: 1

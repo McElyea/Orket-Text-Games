@@ -1,0 +1,7 @@
+- id: CRIME_CORP_LEAK_001
+  title: Boardroom Archive Leak
+  required_fact_slots:
+    - time
+    - access
+    - linkage
+    - object

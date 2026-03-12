@@ -1,0 +1,8 @@
+{
+  "canonical_blob_digest": "d7c06cf9b47e97812406a5d73160a8fee83f0fde376dd1573976d614a98833aa",
+  "inputs_manifest_digest": "cbc6f1d2af23e328ee19f34d9d0607a5ee44168c1ce31431ad379b567723d005",
+  "outputs_manifest_digest": "acbe7e26252d0d124e58f90803c7c02d05e30adf194fd6e4af5dd2f3d899a80b",
+  "route_id": "textmystery_persona_v0",
+  "scenario_pack_id": "textmystery_truth_only_v0",
+  "scenario_pack_version": "1.0.0"
+}

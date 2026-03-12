@@ -1,0 +1,11 @@
+- id: SCENE_001
+  intro_lines:
+    - "11:03 PM. The archive alarms hit live TV."
+    - "A boardroom feed was hijacked in plain sight."
+    - "Someone moved the audit drive before lockdown."
+    - "Four suspects are still on site."
+  crime_palette_ids:
+    - CRIME_CORP_LEAK_001
+  entity_vocab:
+    - SERVICE_DOOR
+    - BOARDROOM

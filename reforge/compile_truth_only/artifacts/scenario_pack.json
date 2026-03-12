@@ -1,0 +1,44 @@
+{
+  "mode": "truth_only",
+  "pack_id": "textmystery_truth_only_v0",
+  "tests": [
+    {
+      "hard": true,
+      "id": "TRUTH_001",
+      "kind": "npc_archetype_exists",
+      "params": {},
+      "weight": 1.0
+    },
+    {
+      "hard": true,
+      "id": "TRUTH_002",
+      "kind": "npc_refusal_style_exists",
+      "params": {},
+      "weight": 1.0
+    },
+    {
+      "hard": true,
+      "id": "TRUTH_003",
+      "kind": "refusal_templates_non_empty",
+      "params": {},
+      "weight": 1.0
+    },
+    {
+      "hard": false,
+      "id": "TRUTH_004",
+      "kind": "no_exclamation_rules",
+      "params": {},
+      "weight": 0.3
+    },
+    {
+      "hard": false,
+      "id": "TRUTH_005",
+      "kind": "reasonable_word_limits",
+      "params": {
+        "max_allowed": 24
+      },
+      "weight": 0.2
+    }
+  ],
+  "version": "1.0.0"
+}

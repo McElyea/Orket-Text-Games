@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textmystery"
+version = "0.1.0"
+description = "TextMystery: local deterministic detective game scaffold"
+readme = "docs/README.md"
+requires-python = ">=3.11"
+dependencies = ["pyyaml>=6.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests", "tests_integration"]
+markers = [
+  "ts_det: Determinism and replay tests",
+  "ts_world: World generation solvability invariant tests",
+  "ts_truth: Truth/refuse/dont_know decision correctness tests",
+  "ts_class: Canonical classification and tie-break tests",
+  "ts_content: Content schema and referential integrity tests",
+  "ts_leak: No new facts and leakage-prevention tests",
+  "ts_comp: Companion visibility-boundary tests",
+  "ts_ux: UX timing and run-budget sanity tests",
+  "ts_live: Live Orket integration tests",
+  "milestone_m0: Milestone M0",
+  "milestone_m1: Milestone M1",
+  "milestone_m2: Milestone M2",
+  "milestone_m3: Milestone M3",
+  "milestone_m4: Milestone M4",
+  "milestone_m5: Milestone M5",
+]

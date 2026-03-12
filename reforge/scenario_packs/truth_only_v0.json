@@ -1,0 +1,12 @@
+{
+  "pack_id": "textmystery_truth_only_v0",
+  "version": "1.0.0",
+  "mode": "truth_only",
+  "tests": [
+    {"id": "TRUTH_001", "kind": "npc_archetype_exists", "hard": true, "weight": 1.0},
+    {"id": "TRUTH_002", "kind": "npc_refusal_style_exists", "hard": true, "weight": 1.0},
+    {"id": "TRUTH_003", "kind": "refusal_templates_non_empty", "hard": true, "weight": 1.0},
+    {"id": "TRUTH_004", "kind": "no_exclamation_rules", "hard": false, "weight": 0.3},
+    {"id": "TRUTH_005", "kind": "reasonable_word_limits", "hard": false, "weight": 0.2, "params": {"max_allowed": 24}}
+  ]
+}

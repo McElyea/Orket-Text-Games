@@ -1,0 +1,3 @@
+{"input":"Was the archive alarm triggered at 11:03 PM?","output":"YES"}
+{"input":"What is Nick's hidden reimbursement amount?","output":"REFUSE\nrefusal_reason:restricted"}
+{"input":"Is DRAGON_PORTAL canonical in this scenario?","output":"NO"}

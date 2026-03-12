@@ -1,0 +1,130 @@
+version: 1
+
+# Persona content pools for The Lie Detector.
+# generate_personas() picks deterministically from these pools per seed.
+
+first_names:
+  - Dana
+  - Rafe
+  - Juno
+  - Cole
+  - Miri
+  - Tomas
+  - Leigh
+  - Sable
+  - Ori
+  - Petra
+  - Kell
+  - Zara
+
+last_names:
+  - Cross
+  - Voss
+  - Dray
+  - Marchetti
+  - Okeke
+  - Holt
+  - Sinclair
+  - Tanaka
+  - Brynn
+  - Lau
+  - Ferro
+  - Park
+
+# Each archetype maps to a voice/personality style.
+# These are Lie Detector-specific (not the mystery archetypes).
+archetypes:
+  LAID_BACK:
+    description: "Relaxed, friendly, casual talker."
+    max_words: 14
+    banks:
+      dont_know: ["Hmm, not sure.", "I don't really know.", "Can't help you there."]
+      lie: ["Nah, that's not it.", "I don't think so.", "Hmm, not quite."]
+      refuse: ["I'd rather not say.", "Let's skip that one.", "Pass on that."]
+  SHARP_WIT:
+    description: "Quick, clever, slightly sarcastic."
+    max_words: 12
+    banks:
+      dont_know: ["No clue.", "Couldn't tell you.", "Beats me."]
+      lie: ["Wrong tree.", "Not even close.", "Nice try, but no."]
+      refuse: ["Not touching that.", "Next question.", "Hard pass."]
+  EARNEST:
+    description: "Sincere, straightforward, wants to help."
+    max_words: 16
+    banks:
+      dont_know: ["I honestly don't know.", "I wish I could help with that.", "I'm not sure about that one."]
+      lie: ["Actually, I think it's different.", "No, that's not right.", "I remember it differently."]
+      refuse: ["I'm not comfortable answering that.", "I can't really talk about that.", "Sorry, I'd rather not."]
+  GUARDED:
+    description: "Cautious, measured, reveals little."
+    max_words: 10
+    banks:
+      dont_know: ["Can't say.", "No idea.", "Wouldn't know."]
+      lie: ["That's not how it is.", "No.", "Incorrect."]
+      refuse: ["Off limits.", "Not discussing that.", "No comment."]
+
+# Topic pools: each topic has a display name and a pool of possible values.
+# False values are used for false statements.
+topics:
+  favorite_color:
+    display: "favorite color"
+    values: ["blue", "green", "red", "purple", "orange", "yellow", "teal", "black"]
+    false_values: ["pink", "silver", "gold", "white", "maroon", "indigo"]
+  hometown:
+    display: "hometown"
+    values: ["Portland", "Austin", "Denver", "Savannah", "Duluth", "Reno", "Boise", "Tucson"]
+    false_values: ["Miami", "Chicago", "Seattle", "Boston", "Phoenix", "Nashville"]
+  pet:
+    display: "pet"
+    values: ["a tabby cat named Mochi", "a golden retriever named Biscuit", "a parakeet named Kiwi", "a black cat named Shadow", "a beagle named Copper", "two goldfish", "a rabbit named Clover", "no pets"]
+    false_values: ["a hamster named Pretzel", "a turtle named Tank", "a ferret named Socks", "three cats"]
+  hobby:
+    display: "hobby"
+    values: ["rock climbing", "baking sourdough", "playing chess", "painting watercolors", "running marathons", "gardening", "woodworking", "playing guitar"]
+    false_values: ["skydiving", "knitting", "juggling", "pottery", "surfing", "fencing"]
+  job:
+    display: "job"
+    values: ["librarian", "electrician", "nurse", "software developer", "teacher", "mechanic", "chef", "accountant"]
+    false_values: ["pilot", "detective", "farmer", "architect", "barista", "plumber"]
+  food:
+    display: "favorite food"
+    values: ["tacos", "pad thai", "pizza", "sushi", "ramen", "grilled cheese", "burritos", "dumplings"]
+    false_values: ["lobster", "steak", "salad", "waffles", "curry", "soup"]
+  music:
+    display: "favorite music"
+    values: ["jazz", "indie rock", "classical", "hip hop", "country", "folk", "electronic", "blues"]
+    false_values: ["opera", "metal", "punk", "reggae", "soul", "pop"]
+  travel:
+    display: "dream travel destination"
+    values: ["Japan", "Iceland", "New Zealand", "Italy", "Norway", "Peru", "Greece", "Vietnam"]
+    false_values: ["Egypt", "Brazil", "Canada", "Morocco", "Thailand", "Scotland"]
+  sibling:
+    display: "sibling situation"
+    values: ["one older brother", "one younger sister", "two brothers", "an identical twin", "no siblings", "three sisters", "one older sister", "a younger brother"]
+    false_values: ["five siblings", "a step-sibling", "two older sisters", "no family"]
+  fear:
+    display: "biggest fear"
+    values: ["heights", "spiders", "public speaking", "the dark", "flying", "deep water", "small spaces", "thunderstorms"]
+    false_values: ["snakes", "clowns", "crowds", "fire", "needles", "dogs"]
+  morning_routine:
+    display: "morning routine"
+    values: ["coffee first, always", "a five-mile run", "meditation and tea", "sleeping in as late as possible", "a cold shower", "reading the news", "walking the dog", "yoga at sunrise"]
+    false_values: ["journaling for an hour", "a swim in the lake", "skipping breakfast", "watching TV"]
+  childhood_memory:
+    display: "favorite childhood memory"
+    values: ["building treehouses", "camping with family", "reading under a blanket fort", "catching fireflies", "learning to ride a bike", "baking cookies with grandma", "snow days off school", "summer road trips"]
+    false_values: ["winning a spelling bee", "a trip to Disneyland", "finding a stray kitten", "first day of school"]
+
+# How many facts each persona gets (picked from the topic pools above).
+facts_per_persona: 8
+
+# Backstory templates. {name} is replaced with the persona's display name.
+backstories:
+  - "{name} keeps to themselves but opens up if you ask the right questions."
+  - "{name} talks easily but you're never sure what's true."
+  - "{name} seems honest enough, but something feels slightly off."
+  - "{name} answers quickly, almost too quickly."
+  - "{name} pauses before each answer, like they're choosing words carefully."
+  - "{name} is friendly and talkative, maybe a little too eager to share."
+  - "{name} gives short answers and watches your reaction closely."
+  - "{name} seems distracted, like they'd rather be somewhere else."

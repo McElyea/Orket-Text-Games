@@ -1,0 +1,26 @@
+floors: 7
+max_questions_per_floor: 5
+early_solve_bonus: 1
+
+streak_threshold: 3
+power_up_on_streak: OATH_STONE
+
+difficulty:
+  normal:
+    floor_policies:
+      - ALWAYS_TRUTH
+      - ALWAYS_LIE
+      - ALWAYS_TRUTH
+      - HALF_AND_HALF
+      - ALWAYS_LIE
+      - TOPIC_SPLIT
+      - ALWAYS_TRUTH
+  hard:
+    floor_policies:
+      - HALF_AND_HALF
+      - ALWAYS_LIE
+      - TOPIC_SPLIT
+      - ALWAYS_LIE
+      - HALF_AND_HALF
+      - TOPIC_SPLIT
+      - ALWAYS_LIE

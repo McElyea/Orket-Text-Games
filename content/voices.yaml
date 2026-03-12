@@ -1,0 +1,48 @@
+version: 1
+
+# Maps abstract voice_id -> Piper ONNX model stem
+piper_models:
+  male_low_clipped: "en_US-lessac-medium"
+  female_mid_measured: "en_US-amy-medium"
+  male_deep_sparse: "en_GB-alan-medium"
+  male_mid_blunt: "en_US-ryan-medium"
+
+# Decision mode -> emotion_hint mapping (used by render layer)
+emotion_map:
+  ANSWER: "neutral"
+  REFUSE: "defensive"
+  DONT_KNOW: "uncertain"
+  CLARIFY: "neutral"
+
+profiles:
+  NICK_VALE:
+    voice_id: "male_low_clipped"
+    base_speed: 1.1
+    adjustments:
+      neutral: {}
+      defensive: {speed: 1.2, pitch_variance: 0.02}
+      uncertain: {speed: 0.95}
+
+  NADIA_BLOOM:
+    voice_id: "female_mid_measured"
+    base_speed: 0.95
+    adjustments:
+      neutral: {}
+      defensive: {speed: 0.85, pitch_variance: 0.01}
+      uncertain: {speed: 0.9, pitch_variance: 0.03}
+
+  VICTOR_SLATE:
+    voice_id: "male_deep_sparse"
+    base_speed: 0.85
+    adjustments:
+      neutral: {pitch_variance: 0.01}
+      defensive: {speed: 0.7}
+      uncertain: {speed: 0.6, pitch_variance: 0.08}
+
+  GABE_ROURKE:
+    voice_id: "male_mid_blunt"
+    base_speed: 1.05
+    adjustments:
+      neutral: {}
+      defensive: {speed: 1.15, pitch_variance: 0.03}
+      uncertain: {speed: 1.0, pitch_variance: 0.02}

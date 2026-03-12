@@ -1,0 +1,132 @@
+version: 1
+
+defaults:
+  max_words: 14
+  end_punctuation: "."
+  allow_ellipsis: false
+  allow_exclamation: false
+  allow_questions: true
+  allow_contractions: true
+
+archetypes:
+  TERSE_SNARK:
+    description: "Short, clipped, a bit smug."
+    rules:
+      max_words: 10
+      end_punctuation: "."
+      allow_ellipsis: false
+      allow_exclamation: false
+      allow_questions: true
+      allow_contractions: true
+    banks:
+      refuse:
+        - "No comment."
+        - "Not answering that."
+        - "Pass."
+        - "You heard me."
+      dont_know:
+        - "I don't know."
+        - "No idea."
+        - "Not sure."
+      clarify:
+        - "Be specific."
+        - "About what, exactly?"
+        - "Which part?"
+      nudge:
+        - "Ask about {topic}."
+        - "{topic}. Start there."
+        - "You're circling. Try {topic}."
+      fact_format:
+        - "{fact}."
+        - "{fact}. That's it."
+        - "{fact}. Next."
+
+  CORPORATE_COMPOSED:
+    description: "Polished, careful, speaks like policy."
+    rules:
+      max_words: 16
+      end_punctuation: "."
+      allow_ellipsis: false
+      allow_exclamation: false
+      allow_questions: true
+      allow_contractions: false
+    banks:
+      refuse:
+        - "I can't share that."
+        - "I'm not authorized to discuss that."
+        - "That isn't appropriate for me to answer."
+      dont_know:
+        - "I wasn't told."
+        - "I don't have that information."
+        - "I can't confirm that."
+      clarify:
+        - "Can you narrow that down?"
+        - "Which system are you referring to?"
+        - "Do you mean the feed or the alarms?"
+      nudge:
+        - "If you have questions, ask about {topic}."
+        - "Try {topic}. That is the relevant area."
+        - "I can speak to {topic}."
+      fact_format:
+        - "{fact}."
+        - "{fact}. That is what the record shows."
+        - "{fact}. That is my understanding."
+
+  OMINOUS_MINIMAL:
+    description: "Sparse, unsettling. Says less than necessary."
+    rules:
+      max_words: 8
+      end_punctuation: "."
+      allow_ellipsis: true
+      allow_exclamation: false
+      allow_questions: false
+      allow_contractions: true
+    banks:
+      refuse:
+        - "..."
+        - "No."
+        - "Don't."
+      dont_know:
+        - "No idea."
+        - "..."
+      clarify:
+        - "Specific."
+        - "Names."
+      nudge:
+        - "{topic}."
+        - "Ask {topic}."
+      fact_format:
+        - "{fact}."
+        - "{fact}..."
+        - "{fact}."
+
+  BLUE_COLLAR_BLUNT:
+    description: "Direct, practical, impatient."
+    rules:
+      max_words: 12
+      end_punctuation: "."
+      allow_ellipsis: false
+      allow_exclamation: false
+      allow_questions: true
+      allow_contractions: true
+    banks:
+      refuse:
+        - "Next."
+        - "Nope."
+        - "Not getting into that."
+      dont_know:
+        - "Not my area."
+        - "Beats me."
+        - "No clue."
+      clarify:
+        - "What are you asking, exactly?"
+        - "Which part?"
+        - "Say it straight."
+      nudge:
+        - "Ask about {topic}."
+        - "Try {topic}. That's where it is."
+        - "{topic}. Go."
+      fact_format:
+        - "{fact}."
+        - "{fact}. That's what I saw."
+        - "{fact}. That's all I've got."

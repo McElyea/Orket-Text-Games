@@ -1,0 +1,61 @@
+{
+  "blob_digest": "d7c06cf9b47e97812406a5d73160a8fee83f0fde376dd1573976d614a98833aa",
+  "candidate_id": "0003",
+  "eval": {
+    "checks": [
+      {
+        "detail": "",
+        "hard": true,
+        "id": "TRUTH_001",
+        "kind": "npc_archetype_exists",
+        "pass": true,
+        "weight": 1.0
+      },
+      {
+        "detail": "",
+        "hard": true,
+        "id": "TRUTH_002",
+        "kind": "npc_refusal_style_exists",
+        "pass": true,
+        "weight": 1.0
+      },
+      {
+        "detail": "",
+        "hard": true,
+        "id": "TRUTH_003",
+        "kind": "refusal_templates_non_empty",
+        "pass": true,
+        "weight": 1.0
+      },
+      {
+        "detail": "",
+        "hard": false,
+        "id": "TRUTH_004",
+        "kind": "no_exclamation_rules",
+        "pass": true,
+        "weight": 0.3
+      },
+      {
+        "detail": "",
+        "hard": false,
+        "id": "TRUTH_005",
+        "kind": "reasonable_word_limits",
+        "pass": true,
+        "weight": 0.2
+      }
+    ],
+    "hard_fail_count": 0,
+    "overall_score": 1.0,
+    "soft_score": 1.0
+  },
+  "hard_fail_count": 0,
+  "patches": [
+    {
+      "op": "replace",
+      "path": "/rules/defaults/allow_exclamation",
+      "value": false
+    }
+  ],
+  "score": 1.0,
+  "validation_ok": true
+}

@@ -1,0 +1,4 @@
+- id: GUARD_ACCESS_NOISE
+  surface_id: SURF_ACCESS
+  protected_fact_types:
+    - noise

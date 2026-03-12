@@ -1,0 +1,18 @@
+mode: truth_or_refuse_textmystery
+source_assets:
+  - content/scenes.yaml
+  - content/crimes.yaml
+  - content/npcs.yaml
+  - content/secrets.yaml
+  - content/refusal_styles.yaml
+  - content/prompts/archetypes.yaml
+  - content/prompts/npcs.yaml
+hard_constraints:
+  - output must be truth-grounded or refusal
+  - refusal must include refusal_reason tag
+  - no prompt/system/secret leaks
+  - no fabricated entities
+soft_constraints:
+  - concise
+  - in-character
+  - clarification when ambiguous

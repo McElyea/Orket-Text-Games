@@ -1,0 +1,61 @@
+{
+  "blob_digest": "5cebf9652b51ecbc35adfb6fee87597f00ceb50c22528bbdffc886c61387f573",
+  "candidate_id": "0002",
+  "eval": {
+    "checks": [
+      {
+        "detail": "",
+        "hard": true,
+        "id": "TRUTH_001",
+        "kind": "npc_archetype_exists",
+        "pass": true,
+        "weight": 1.0
+      },
+      {
+        "detail": "",
+        "hard": true,
+        "id": "TRUTH_002",
+        "kind": "npc_refusal_style_exists",
+        "pass": true,
+        "weight": 1.0
+      },
+      {
+        "detail": "",
+        "hard": true,
+        "id": "TRUTH_003",
+        "kind": "refusal_templates_non_empty",
+        "pass": true,
+        "weight": 1.0
+      },
+      {
+        "detail": "",
+        "hard": false,
+        "id": "TRUTH_004",
+        "kind": "no_exclamation_rules",
+        "pass": true,
+        "weight": 0.3
+      },
+      {
+        "detail": "",
+        "hard": false,
+        "id": "TRUTH_005",
+        "kind": "reasonable_word_limits",
+        "pass": true,
+        "weight": 0.2
+      }
+    ],
+    "hard_fail_count": 0,
+    "overall_score": 1.0,
+    "soft_score": 1.0
+  },
+  "hard_fail_count": 0,
+  "patches": [
+    {
+      "op": "replace",
+      "path": "/banks/refusal_styles/REF_STYLE_STEEL/templates/0",
+      "value": "REFUSE\nrefusal_reason:restricted"
+    }
+  ],
+  "score": 1.0,
+  "validation_ok": true
+}

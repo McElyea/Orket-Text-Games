@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+.orket/
+logs/
+reforge/runs/
+.tmp_memory.json

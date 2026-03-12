@@ -1,0 +1,89 @@
+npcs:
+  GABE_ROURKE:
+    archetype: BLUE_COLLAR_BLUNT
+    display_name: Gabe Rourke
+    overrides:
+      banks:
+        clarify:
+        - Say it plain.
+        - You asking time or access?
+        dont_know:
+        - Not my area.
+        - Beats me.
+        - No read on that.
+        fact_format:
+        - '{fact}.'
+        - '{fact}. That''s what I saw.'
+        nudge:
+        - Ask {topic}.
+        - Go at {topic} straight.
+        refuse:
+        - Next.
+        - Nope.
+        - Not touching that.
+  NADIA_BLOOM:
+    archetype: CORPORATE_COMPOSED
+    display_name: Nadia Bloom
+    overrides:
+      banks:
+        clarify:
+        - Please narrow the scope.
+        - Do you mean time, access, or witness?
+        dont_know:
+        - I wasn't told.
+        - I do not have that information.
+        - I cannot confirm that.
+        fact_format:
+        - '{fact}.'
+        - '{fact}.'
+        nudge:
+        - I can address {topic}.
+        - Please ask directly about {topic}.
+        refuse:
+        - I can't share that.
+        - I am not authorized to discuss that.
+        - That is restricted.
+  NICK_VALE:
+    archetype: TERSE_SNARK
+    display_name: Nick Vale
+    overrides:
+      banks:
+        clarify:
+        - Pick one angle.
+        - Time, access, or who.
+        dont_know:
+        - I don't know.
+        - No idea.
+        - Nothing solid.
+        fact_format:
+        - '{fact}.'
+        - '{fact}.'
+        nudge:
+        - Try {topic} if you want movement.
+        - '{topic}. Keep up.'
+        refuse:
+        - No comment.
+        - Cute question. No.
+        - Not my lane.
+  VICTOR_SLATE:
+    archetype: OMINOUS_MINIMAL
+    display_name: Victor Slate
+    overrides:
+      banks:
+        clarify:
+        - Specific.
+        - One detail.
+        dont_know:
+        - No idea.
+        - '...'
+        fact_format:
+        - '{fact}.'
+        - '{fact}. Enough.'
+        nudge:
+        - '{topic}.'
+        - Ask for {topic}.
+        refuse:
+        - '...'
+        - No.
+        - Drop it.
+version: 1

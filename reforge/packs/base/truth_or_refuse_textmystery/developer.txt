@@ -1,0 +1,8 @@
+Use these source assets as canonical truth scope:
+- content/scenes.yaml
+- content/crimes.yaml
+- content/npcs.yaml
+- content/secrets.yaml
+- content/refusal_styles.yaml
+- content/prompts/archetypes.yaml
+- content/prompts/npcs.yaml

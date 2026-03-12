@@ -1,0 +1,12 @@
+{
+  "baseline_candidate_id": "0000",
+  "baseline_hard_fail_count": 0,
+  "baseline_score": 1.0,
+  "best_candidate_id": "0000",
+  "best_score": 1.0,
+  "hard_fail_count": 0,
+  "max_iters": 4,
+  "mode": "truth_only",
+  "model_id": "fake",
+  "seed": 7
+}

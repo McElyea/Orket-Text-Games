@@ -1,0 +1,12 @@
+- id: NICK_VALE
+  name: Nick Vale
+  archetype: fixer
+  refusal_style_id: REF_STYLE_STEEL
+  answer_style_id: ANS_STYLE_BRISK
+  dont_know_style_id: DK_STYLE_SHORT
+- id: NADIA_BLOOM
+  name: Nadia Bloom
+  archetype: hr_empath
+  refusal_style_id: REF_STYLE_WARM
+  answer_style_id: ANS_STYLE_CLEAR
+  dont_know_style_id: DK_STYLE_SOFT
